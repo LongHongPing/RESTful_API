@@ -1,4 +1,8 @@
 <?php
+/*
+ * 用户服务端
+ * 返回json格式
+ */
 //设置页面
 header('Content-Type:text/html;charset=utf-8');
 
@@ -32,7 +36,7 @@ function httppost($url,$parms){
     }
 }
 
-$postUrl = "http://localhost.restful API/api/server.php";
+$postUrl = "http://localhost/restful_API/server.php";
 
 $p = $_POST['p'];
 if($p == "register"){
