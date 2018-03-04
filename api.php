@@ -1,4 +1,10 @@
 <?php
+/*
+ * 博客用户注册登陆功能
+ * 信息采用MD5加密
+ * 0为成功，1位失败
+ * 返回json格式
+ */
 //请求
 require 'conn.php';
 header('Content-Type:/html;charset=utf-8');
@@ -59,4 +65,5 @@ switch ($action){
         $res = array("status"=>1,"msg"=>'操作错误');
         exit(json_encode($res));
 }
+mysqli_close();
 ?>
