@@ -1,4 +1,9 @@
 <?php
+/*
+ * 博客文章的增删改查
+ * 0为成功，1为失败
+ * 返回json格式
+ */
 require 'conn.php';
 header('Content-Type:/html;charset=utf-8');
 
@@ -82,4 +87,5 @@ switch ($action){
         $res = array("status"=>1,"msg"=>'操作错误');
         exit(json_encode($res));
 }
+mysqli_close();
 ?>
